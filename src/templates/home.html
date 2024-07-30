@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+    {%block head_title%}
+    Changed Head title - {{block.super}}
+    {%endblock head_title%}
+    {%block content%}
+    lalala
+    {%include 'snippets/welcome-user-msg.html'%}
+    <p>Page Visits: {{page_visit_count}}</p>
+    <p>Total Visits: {{total_visit_count}}</p>
+    {%endblock content%}
